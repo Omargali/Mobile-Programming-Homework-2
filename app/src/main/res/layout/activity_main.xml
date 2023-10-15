@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="70dp"
+      android:id="@+id/logo">
+
+    <ImageView
+        android:layout_width="169dp"
+        android:layout_height="160dp"
+        android:src="@drawable/sdu_logo"
+        />
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/logo"
+      android:background="#e8f0fe"
+      android:layout_marginStart="28dp"
+      android:layout_marginEnd="28dp"
+      android:layout_marginBottom="28dp"
+      android:hint="Login"
+      android:padding="15dp"
+      android:drawableLeft="@drawable/baseline_person_24"
+      android:drawablePadding="10dp"
+      />
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/username"
+      android:background="#e8f0fe"
+      android:layout_marginStart="28dp"
+      android:layout_marginEnd="28dp"
+      android:layout_marginBottom="28dp"
+      android:hint="Password"
+      android:padding="15dp"
+      android:drawableLeft="@drawable/baseline_key_24"
+      android:drawablePadding="10dp"
+      />
+
+  <com.google.android.material.button.MaterialButton
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/password"
+      android:id="@+id/btn_login"
+      android:text="Log in"
+      android:textStyle="bold"
+      android:textSize="18dp"
+      android:backgroundTint="@color/blue"
+      app:cornerRadius="20px"
+      android:layout_marginEnd="28dp"
+      android:layout_marginStart="28dp"
+
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/forgotpass"
+      android:layout_below="@id/btn_login"
+      android:text="Forgotten your login or password?"
+      android:layout_margin="12dp"
+      android:alpha="0.7"
+      android:layout_centerHorizontal="true"
+      android:textColor="@color/blue"
+    />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/other"
+      android:text = "or sign in with"
+      android:alpha="0.7"
+      android:layout_centerHorizontal="true"
+      android:textColor="@color/blue"
+      android:layout_above="@id/logos"
+    />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:id="@+id/logos"
+      >
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/search"
+        />
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/twitter"/>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/github"/>
+  </LinearLayout>
+
+
+
+  </RelativeLayout>
